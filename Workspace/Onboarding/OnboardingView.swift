@@ -27,6 +27,11 @@ final class OnboardingView: BaseView {
     let startButton = {
         let view = UIButton()
         view.isHidden = true
+        view.titleLabel?.font = .title2
+        view.setTitle("시작하기", for: .normal)
+        view.setTitleColor(.bdWhite, for: .normal)
+        view.backgroundColor = .bdGreen
+        view.layer.cornerRadius = 8
         return view
     }()
     
@@ -47,6 +52,12 @@ final class OnboardingView: BaseView {
             $0.centerX.equalTo(self)
             $0.height.equalTo(image.snp.width).multipliedBy(1)
             $0.top.equalTo(label.snp.bottom).offset(89)
+        }
+        
+        startButton.snp.makeConstraints {
+            $0.horizontalEdges.equalTo(self).inset(24)
+            $0.bottom.equalTo(safeAreaLayoutGuide).inset(24)
+            $0.height.equalTo(44)
         }
     }
 }

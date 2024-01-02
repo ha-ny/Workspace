@@ -15,7 +15,11 @@
 		3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649E12B43D0E8005D1E4B /* OnboardingView.swift */; };
 		3FE649E52B43D12B005D1E4B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE649E42B43D12B005D1E4B /* SnapKit */; };
 		3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649E82B43DB41005D1E4B /* BaseView.swift */; };
-		3FE649EB2B43E2A4005D1E4B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649EA2B43E2A4005D1E4B /* File.swift */; };
+		3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */; };
+		3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649ED2B43EB45005D1E4B /* OnboardingViewController.swift */; };
+		3FE649F12B43EBB3005D1E4B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE649F02B43EBB3005D1E4B /* RxCocoa */; };
+		3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE649F22B43EBB3005D1E4B /* RxSwift */; };
+		3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +32,9 @@
 		3FE649DF2B43D0B2005D1E4B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		3FE649E12B43D0E8005D1E4B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3FE649E82B43DB41005D1E4B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		3FE649EA2B43E2A4005D1E4B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
+		3FE649ED2B43EB45005D1E4B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */,
+				3FE649F12B43EBB3005D1E4B /* RxCocoa in Frameworks */,
 				3FE649E52B43D12B005D1E4B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				3FE649E12B43D0E8005D1E4B /* OnboardingView.swift */,
+				3FE649ED2B43EB45005D1E4B /* OnboardingViewController.swift */,
+				3FE649F62B44CD6A005D1E4B /* Auth */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -102,9 +112,17 @@
 		3FE649EC2B43E2AF005D1E4B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3FE649EA2B43E2A4005D1E4B /* File.swift */,
+				3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3FE649F62B44CD6A005D1E4B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +143,8 @@
 			name = Workspace;
 			packageProductDependencies = (
 				3FE649E42B43D12B005D1E4B /* SnapKit */,
+				3FE649F02B43EBB3005D1E4B /* RxCocoa */,
+				3FE649F22B43EBB3005D1E4B /* RxSwift */,
 			);
 			productName = Workspace;
 			productReference = 3FE649C72B43CE5D005D1E4B /* Workspace.app */;
@@ -156,6 +176,7 @@
 			mainGroup = 3FE649BE2B43CE5D005D1E4B;
 			packageReferences = (
 				3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 3FE649C82B43CE5D005D1E4B /* Products */;
 			projectDirPath = "";
@@ -184,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
-				3FE649EB2B43E2A4005D1E4B /* File.swift in Sources */,
+				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
 				3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */,
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
+				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
+				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,
 			);
@@ -339,7 +362,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +393,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,6 +442,14 @@
 				minimumVersion = 5.7.0;
 			};
 		};
+		3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -426,6 +457,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3FE649F02B43EBB3005D1E4B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		3FE649F22B43EBB3005D1E4B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

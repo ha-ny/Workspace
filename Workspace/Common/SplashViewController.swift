@@ -9,9 +9,10 @@ import UIKit
 
 final class SplashViewController: UIViewController {
 
-    let mainView = OnboardingView()
+    private let mainView = OnboardingView()
     
     override func loadView() {
+        super.loadView()
         self.view = mainView
     }
     
