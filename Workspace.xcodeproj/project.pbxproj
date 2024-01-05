@@ -23,6 +23,10 @@
 		3FE649F82B44CDB7005D1E4B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649F72B44CDB7005D1E4B /* AuthView.swift */; };
 		3FE649FB2B44D2F7005D1E4B /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649FA2B44D2F7005D1E4B /* TextButton.swift */; };
 		3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */; };
+		3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A062B452E66005D1E4B /* SignUpViewController.swift */; };
+		3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A082B452E6F005D1E4B /* SignUpView.swift */; };
+		3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0A2B453036005D1E4B /* TextFieldView.swift */; };
+		3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		3FE649F72B44CDB7005D1E4B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		3FE649FA2B44D2F7005D1E4B /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		3FE64A062B452E66005D1E4B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3FE64A082B452E6F005D1E4B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3FE64A0A2B453036005D1E4B /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			children = (
 				3FE649F72B44CDB7005D1E4B /* AuthView.swift */,
 				3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */,
+				3FE64A052B452E54005D1E4B /* SignUp */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -138,8 +147,19 @@
 				3FE649E82B43DB41005D1E4B /* BaseView.swift */,
 				3FE649FA2B44D2F7005D1E4B /* TextButton.swift */,
 				3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */,
+				3FE64A0A2B453036005D1E4B /* TextFieldView.swift */,
+				3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */,
 			);
 			path = Componet;
+			sourceTree = "<group>";
+		};
+		3FE64A052B452E54005D1E4B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A082B452E6F005D1E4B /* SignUpView.swift */,
+				3FE64A062B452E66005D1E4B /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +247,11 @@
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
+				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
 				3FE649FB2B44D2F7005D1E4B /* TextButton.swift in Sources */,
+				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
+				3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */,
+				3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */,
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,

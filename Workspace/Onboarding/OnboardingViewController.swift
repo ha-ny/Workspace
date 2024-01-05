@@ -22,6 +22,10 @@ final class OnboardingViewController: UIViewController {
         view.backgroundColor = .bgPrimary
         mainView.startButton.isHidden = false
         
+        let backItem = UIBarButtonItem(image: .iconBack, style: .plain, target: self, action: nil)
+        backItem.tintColor = .textPrimary
+        navigationItem.backBarButtonItem = backItem
+        
         bind()
     }
     
@@ -32,6 +36,8 @@ final class OnboardingViewController: UIViewController {
                 sheet.detents = [.custom(resolver: { _ in
                     return 269
                 })]
+                
+                sheet.preferredCornerRadius = 10
                 sheet.prefersGrabberVisible = true
             }
             owner.present(vc, animated: true)

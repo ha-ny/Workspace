@@ -34,8 +34,12 @@ final class AuthViewController: UIViewController {
             mainView.joinButton.rx.tap.map { AuthType.join }
         )
         
-        taps.subscribe(onNext: { auth in
-            auth.action()
+        taps.subscribe(onNext: { [weak self]auth in
+            guard let self, let pvc = self.presentingViewController else { return }
+            
+            self.dismiss(animated: true) {
+                auth.action(pvc)
+            }
         }).disposed(by: disposeBag)
     }
 }
@@ -47,19 +51,25 @@ extension AuthViewController {
         case email
         case join
         
-        var action: (() -> Void) {
+        var action: ((UIViewController) -> Void) {
             switch self {
-            case .apple: {
+            case .apple: { view in
                 
             }
-            case .kakao: {
+            case .kakao: { view in
                 
             }
-            case .email: {
+            case .email: { view in
                 
             }
-            case .join: {
-                
+            case .join: { view in
+                let vc = SignUpViewController()
+                if let sheet = vc.sheetPresentationController {
+                    sheet.detents = [.large()]
+                    sheet.preferredCornerRadius = 10
+                }
+
+                view.present(vc, animated: true)
             }
             }
         }

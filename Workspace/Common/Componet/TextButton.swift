@@ -10,8 +10,7 @@ import UIKit
 final class TextButton: UIButton {
     
     enum ButtonType {
-        case active
-        case inActive
+        case full
         case border
     }
 
@@ -23,7 +22,7 @@ final class TextButton: UIButton {
         setTitle(title, for: .normal)
         
         switch style {
-        case .active, .inActive:
+        case .full:
             setTitleColor(.bdWhite, for: .normal)
             backgroundColor = .bdGreen
         case .border:

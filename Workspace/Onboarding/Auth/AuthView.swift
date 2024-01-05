@@ -36,24 +36,18 @@ final class AuthView: BaseView {
     }
     
     override func setConstraints() {
-        appleButton.snp.makeConstraints {
-            $0.top.equalTo(self).inset(42)
-            $0.horizontalEdges.equalTo(self).inset(35)
-        }
+        let views = [appleButton, kakaoButton, emailButton, joinButton]
         
-        kakaoButton.snp.makeConstraints {
-            $0.horizontalEdges.equalTo(appleButton.snp.horizontalEdges)
-            $0.top.equalTo(appleButton.snp.bottom).offset(16)
-        }
-        
-        emailButton.snp.makeConstraints {
-            $0.horizontalEdges.equalTo(kakaoButton.snp.horizontalEdges)
-            $0.top.equalTo(kakaoButton.snp.bottom).offset(16)
-        }
-        
-        joinButton.snp.makeConstraints {
-            $0.horizontalEdges.equalTo(emailButton.snp.horizontalEdges)
-            $0.top.equalTo(emailButton.snp.bottom).offset(16)
+        views.enumerated().forEach { index, view in
+            view.snp.makeConstraints {
+                if index == 0 {
+                    $0.top.equalToSuperview().inset(42)
+                    $0.horizontalEdges.equalToSuperview().inset(35)
+                } else {
+                    $0.horizontalEdges.equalTo(views[index - 1].snp.horizontalEdges)
+                    $0.top.equalTo(views[index - 1].snp.bottom).offset(16)
+                }
+            }
         }
     }
 }
