@@ -13,7 +13,7 @@ final class AuthView: BaseView {
     let kakaoButton = ImageButton(image: .kakaoLogin)
     let emailButton = ImageButton(image: .emailLogin)
     
-    let joinButton: UIButton = {
+    let signButton: UIButton = {
         let view = UIButton()
         view.titleLabel?.font = .title2
         view.setTitleColor(.bdGreen, for: .normal)
@@ -32,11 +32,11 @@ final class AuthView: BaseView {
         addSubview(appleButton)
         addSubview(kakaoButton)
         addSubview(emailButton)
-        addSubview(joinButton)
+        addSubview(signButton)
     }
     
     override func setConstraints() {
-        let views = [appleButton, kakaoButton, emailButton, joinButton]
+        let views = [appleButton, kakaoButton, emailButton, signButton]
         
         views.enumerated().forEach { index, view in
             view.snp.makeConstraints {
