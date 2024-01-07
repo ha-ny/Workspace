@@ -24,8 +24,8 @@ final class OnboardingView: BaseView {
         return view
     }()
     
-    let startButton = {
-        let view = TextButton(style: .full, title: "시작하기")
+    let startButtonView = {
+        let view = TextButtonView(style: .fill, title: "시작하기")
         view.isHidden = true
         return view
     }()
@@ -33,7 +33,7 @@ final class OnboardingView: BaseView {
     override func setConfiguration() {
         addSubview(label)
         addSubview(image)
-        addSubview(startButton)
+        addSubview(startButtonView)
     }
 
     override func setConstraints() {
@@ -49,10 +49,9 @@ final class OnboardingView: BaseView {
             $0.top.equalTo(label.snp.bottom).offset(89)
         }
         
-        startButton.snp.makeConstraints {
-            $0.horizontalEdges.equalToSuperview().inset(24)
-            $0.bottom.equalTo(safeAreaLayoutGuide).inset(24)
-            $0.height.equalTo(44)
+        startButtonView.snp.makeConstraints {
+            $0.horizontalEdges.equalToSuperview()
+            $0.bottom.equalTo(safeAreaLayoutGuide).inset(12)
         }
     }
 }

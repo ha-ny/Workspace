@@ -13,7 +13,7 @@ final class SignUpView: BaseView {
     let emailView = TextFieldView(title: "이메일", placeholder: "이메일을 입력하세요")
     
     let emailCheckButton = {
-        let view = TextButton(style: .full, title: "중복 확인")
+        let view = TextButtonView(style: .fill, title: "중복 확인").button
         view.backgroundColor = .bdInactive
         return view
     }()
@@ -33,9 +33,9 @@ final class SignUpView: BaseView {
         return view
     }()
 
-    let signUpButton = {
-        let view = TextButton(style: .full, title: "가입하기")
-        view.backgroundColor = .bdInactive
+    let signUpButtonView = {
+        let view =  TextButtonView(style: .fill, title: "가입하기")
+        view.button.backgroundColor = .bdInactive
         return view
     }()
     
@@ -47,7 +47,7 @@ final class SignUpView: BaseView {
         addSubview(phoneView)
         addSubview(passwordView)
         addSubview(passwordCheckView)
-        addSubview(signUpButton)
+        addSubview(signUpButtonView)
     }
     
     override func setConstraints() {
@@ -70,16 +70,15 @@ final class SignUpView: BaseView {
         }
         
         emailCheckButton.snp.makeConstraints {
-            $0.size.equalTo(CGSize(width: 100, height: 44))
+            $0.width.equalTo(100)
             $0.bottom.equalTo(emailView.textField.snp.bottom)
             $0.leading.equalTo(emailView.snp.trailing).offset(12)
             $0.trailing.equalToSuperview().inset(24)
         }
         
-        signUpButton.snp.makeConstraints {
-            $0.height.equalTo(44)
-            $0.bottom.equalTo(safeAreaLayoutGuide).inset(24)
-            $0.horizontalEdges.equalToSuperview().inset(24)
+        signUpButtonView.snp.makeConstraints {
+            $0.horizontalEdges.equalToSuperview()
+            $0.bottom.equalTo(keyboardLayoutGuide.snp.top)
         }
     }
 }

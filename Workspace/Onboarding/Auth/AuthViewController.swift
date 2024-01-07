@@ -21,7 +21,6 @@ final class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .bgPrimary
         
         bind()
     }
@@ -31,7 +30,7 @@ final class AuthViewController: UIViewController {
             mainView.appleButton.rx.tap.map { AuthType.apple },
             mainView.kakaoButton.rx.tap.map { AuthType.kakao },
             mainView.emailButton.rx.tap.map { AuthType.email },
-            mainView.joinButton.rx.tap.map { AuthType.join }
+            mainView.signButton.rx.tap.map { AuthType.sign }
         )
         
         taps.subscribe(onNext: { [weak self]auth in
@@ -49,7 +48,7 @@ extension AuthViewController {
         case apple
         case kakao
         case email
-        case join
+        case sign
         
         var action: ((UIViewController) -> Void) {
             switch self {
@@ -60,16 +59,10 @@ extension AuthViewController {
                 
             }
             case .email: { view in
-                
+                view.bottomSheet(view: EmailLoginViewController(), detent: .large)
             }
-            case .join: { view in
-                let vc = SignUpViewController()
-                if let sheet = vc.sheetPresentationController {
-                    sheet.detents = [.large()]
-                    sheet.preferredCornerRadius = 10
-                }
-
-                view.present(vc, animated: true)
+            case .sign: { view in
+                view.bottomSheet(view: SignUpViewController(), detent: .large)
             }
             }
         }

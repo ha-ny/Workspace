@@ -1,17 +1,17 @@
 //
-//  SignUpViewController.swift
+//  EmailLoginViewController.swift
 //  Workspace
 //
-//  Created by 김하은 on 1/3/24.
+//  Created by 김하은 on 1/5/24.
 //
 
 import UIKit
 import RxSwift
 import RxCocoa
 
-final class SignUpViewController: UIViewController {
+class EmailLoginViewController: UIViewController {
 
-    private let mainView = SignUpView()
+    private let mainView = EmailLoginView()
     private let disposeBag = DisposeBag()
     
     override func loadView() {
@@ -26,7 +26,7 @@ final class SignUpViewController: UIViewController {
     }
     
     private func bind() {
-        mainView.signUpButtonView.button.rx.tap.subscribe(with: self) { owner, _ in
+        mainView.loginButtonView.button.rx.tap.subscribe(with: self) { owner, _ in
             let vc = HomeViewController()
             owner.present(vc, animated: true)
         }.disposed(by: disposeBag)
