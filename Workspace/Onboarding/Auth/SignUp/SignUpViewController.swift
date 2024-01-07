@@ -10,9 +10,11 @@ import RxSwift
 import RxCocoa
 
 final class SignUpViewController: UIViewController {
-
+    
     private let mainView = SignUpView()
+    private let reactor = SignUpViewReactor()
     private let disposeBag = DisposeBag()
+    let isEmailValidation = BehaviorSubject(value: false)
     
     override func loadView() {
         super.loadView()
@@ -21,14 +23,34 @@ final class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bind()
+        bindAction()
+        bindState()
     }
     
-    private func bind() {
-        mainView.signUpButtonView.button.rx.tap.subscribe(with: self) { owner, _ in
-            let vc = HomeViewController()
-            owner.present(vc, animated: true)
-        }.disposed(by: disposeBag)
+    private func bindAction() {
+        mainView.emailView.textField.rx.text.orEmpty.changed
+            .map { .emailTextChanged($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+//        mainView.emailCheckButton.rx.tap
+//            .map { .emailCheckButtonTap }
+//            .bind(to: reactor.action)
+//            .disposed(by: disposeBag)
+//        
+//        mainView.signUpButtonView.button.rx.tap
+//            .map { .signUpButtonTap }
+//            .bind(to: reactor.action)
+//            .disposed(by: disposeBag)
+    }
+    
+    private func bindState() {
+        reactor.state
+            .map { $0.emailValidate }
+            .distinctUntilChanged()
+            .subscribe(with: self) { owner, isValidation in
+                owner.mainView.activeEmailCheckButton(isActive: isValidation)
+            }
+            .disposed(by: disposeBag)
     }
 }

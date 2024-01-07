@@ -39,6 +39,11 @@ final class SignUpView: BaseView {
         return view
     }()
     
+    func activeEmailCheckButton(isActive: Bool) {
+        emailCheckButton.isEnabled = isActive
+        emailCheckButton.backgroundColor = isActive ? .bdGreen : .bdInactive
+    }
+    
     override func setConfiguration() {
         addSubview(navigationView)
         addSubview(emailView)

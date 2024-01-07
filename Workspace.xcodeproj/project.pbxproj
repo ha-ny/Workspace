@@ -32,6 +32,7 @@
 		3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */; };
 		3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */; };
 		3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A212B4A78E9005D1E4B /* ReactorKit */; };
+		3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
 		3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				3FE64A082B452E6F005D1E4B /* SignUpView.swift */,
 				3FE64A062B452E66005D1E4B /* SignUpViewController.swift */,
+				3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
 				3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */,
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
+				3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */,
 				3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */,
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
