@@ -31,6 +31,7 @@
 		3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */; };
 		3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */; };
 		3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */; };
+		3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A212B4A78E9005D1E4B /* ReactorKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 			files = (
 				3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */,
 				3FE649F12B43EBB3005D1E4B /* RxCocoa in Frameworks */,
+				3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */,
 				3FE649E52B43D12B005D1E4B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +212,7 @@
 				3FE649E42B43D12B005D1E4B /* SnapKit */,
 				3FE649F02B43EBB3005D1E4B /* RxCocoa */,
 				3FE649F22B43EBB3005D1E4B /* RxSwift */,
+				3FE64A212B4A78E9005D1E4B /* ReactorKit */,
 			);
 			productName = Workspace;
 			productReference = 3FE649C72B43CE5D005D1E4B /* Workspace.app */;
@@ -242,6 +245,7 @@
 			packageReferences = (
 				3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */,
 			);
 			productRefGroup = 3FE649C82B43CE5D005D1E4B /* Products */;
 			projectDirPath = "";
@@ -528,6 +532,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -545,6 +557,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		3FE64A212B4A78E9005D1E4B /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
