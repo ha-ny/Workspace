@@ -21,12 +21,16 @@
 		3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE649F22B43EBB3005D1E4B /* RxSwift */; };
 		3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */; };
 		3FE649F82B44CDB7005D1E4B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649F72B44CDB7005D1E4B /* AuthView.swift */; };
-		3FE649FB2B44D2F7005D1E4B /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649FA2B44D2F7005D1E4B /* TextButton.swift */; };
 		3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */; };
 		3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A062B452E66005D1E4B /* SignUpViewController.swift */; };
 		3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A082B452E6F005D1E4B /* SignUpView.swift */; };
 		3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0A2B453036005D1E4B /* TextFieldView.swift */; };
 		3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */; };
+		3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */; };
+		3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */; };
+		3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */; };
+		3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */; };
+		3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +47,16 @@
 		3FE649ED2B43EB45005D1E4B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		3FE649F72B44CDB7005D1E4B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		3FE649FA2B44D2F7005D1E4B /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		3FE64A062B452E66005D1E4B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3FE64A082B452E6F005D1E4B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3FE64A0A2B453036005D1E4B /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginView.swift; sourceTree = "<group>"; };
+		3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
+		3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			children = (
 				3FE649E62B43D146005D1E4B /* Common */,
 				3FE649DE2B43D07C005D1E4B /* Onboarding */,
+				3FE64A152B47E220005D1E4B /* Home */,
 				3FE649E72B43D167005D1E4B /* Delegate */,
 				3FE649D32B43CE5F005D1E4B /* Assets.xcassets */,
 				3FE649D82B43CE5F005D1E4B /* Info.plist */,
@@ -127,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */,
+				3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 			children = (
 				3FE649F72B44CDB7005D1E4B /* AuthView.swift */,
 				3FE649F42B43ECF6005D1E4B /* AuthViewController.swift */,
+				3FE64A122B47E051005D1E4B /* EmailLogin */,
 				3FE64A052B452E54005D1E4B /* SignUp */,
 			);
 			path = Auth;
@@ -145,9 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				3FE649E82B43DB41005D1E4B /* BaseView.swift */,
-				3FE649FA2B44D2F7005D1E4B /* TextButton.swift */,
 				3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */,
 				3FE64A0A2B453036005D1E4B /* TextFieldView.swift */,
+				3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */,
 				3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */,
 			);
 			path = Componet;
@@ -160,6 +171,23 @@
 				3FE64A062B452E66005D1E4B /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		3FE64A122B47E051005D1E4B /* EmailLogin */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */,
+				3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */,
+			);
+			path = EmailLogin;
+			sourceTree = "<group>";
+		};
+		3FE64A152B47E220005D1E4B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,18 +271,22 @@
 			files = (
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
+				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
 				3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */,
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
+				3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */,
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
 				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
-				3FE649FB2B44D2F7005D1E4B /* TextButton.swift in Sources */,
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
+				3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */,
 				3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */,
 				3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */,
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
+				3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,
+				3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */,
 				3FE649F82B44CDB7005D1E4B /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,8 +19,7 @@ final class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .bgPrimary
-        mainView.startButton.isHidden = false
+        mainView.startButtonView.isHidden = false
         
         let backItem = UIBarButtonItem(image: .iconBack, style: .plain, target: self, action: nil)
         backItem.tintColor = .textPrimary
@@ -30,17 +29,8 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func bind() {
-        mainView.startButton.rx.tap.subscribe(with: self) { owner, _ in
-            let vc = AuthViewController()
-            if let sheet = vc.sheetPresentationController {
-                sheet.detents = [.custom(resolver: { _ in
-                    return 269
-                })]
-                
-                sheet.preferredCornerRadius = 10
-                sheet.prefersGrabberVisible = true
-            }
-            owner.present(vc, animated: true)
+        mainView.startButtonView.button.rx.tap.subscribe(with: self) { owner, _ in
+            owner.bottomSheet(view: AuthViewController(), detent: .custom(269), isGrab: true)
         }.disposed(by: disposeBag)
     }
 }
