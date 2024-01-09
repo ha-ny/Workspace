@@ -14,7 +14,6 @@ final class SignUpViewController: UIViewController {
     private let mainView = SignUpView()
     private let reactor = SignUpViewReactor()
     private let disposeBag = DisposeBag()
-    let isEmailValidation = BehaviorSubject(value: false)
     
     override func loadView() {
         super.loadView()
@@ -33,24 +32,32 @@ final class SignUpViewController: UIViewController {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
-//        mainView.emailCheckButton.rx.tap
-//            .map { .emailCheckButtonTap }
-//            .bind(to: reactor.action)
-//            .disposed(by: disposeBag)
-//        
-//        mainView.signUpButtonView.button.rx.tap
-//            .map { .signUpButtonTap }
-//            .bind(to: reactor.action)
-//            .disposed(by: disposeBag)
+        mainView.emailCheckButton.rx.tap
+            .map { [weak self] _ in
+                    .emailCheckButtonTap(self?.mainView.emailView.textField.text ?? "")
+            }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
     
     private func bindState() {
-        reactor.state
-            .map { $0.emailValidate }
-            .distinctUntilChanged()
+        reactor.state.map(\.emailValidate).distinctUntilChanged()
             .subscribe(with: self) { owner, isValidation in
                 owner.mainView.activeEmailCheckButton(isActive: isValidation)
             }
             .disposed(by: disposeBag)
+        
+        reactor.state.map(\.emailCheckMessage).compactMap { $0 }
+            .subscribe(with: self) { owner, title in
+                owner.toastMessage(title: title, centerView: owner.mainView.signUpButtonView)
+            }.disposed(by: disposeBag)
     }
 }
+
+
+
+
+//        mainView.signUpButtonView.button.rx.tap
+//            .map { .signUpButtonTap }
+//            .bind(to: reactor.action)
+//            .disposed(by: disposeBag)

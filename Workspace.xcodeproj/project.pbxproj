@@ -33,6 +33,13 @@
 		3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */; };
 		3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A212B4A78E9005D1E4B /* ReactorKit */; };
 		3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */; };
+		3FE64A282B4B82B9005D1E4B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A272B4B82B9005D1E4B /* APIService.swift */; };
+		3FE64A2E2B4B8586005D1E4B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3FE64A2D2B4B8586005D1E4B /* .gitignore */; };
+		3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */; };
+		3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A342B4B9621005D1E4B /* APIManager.swift */; };
+		3FE64A422B4B9E10005D1E4B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A412B4B9E10005D1E4B /* RxMoya */; };
+		3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */; };
+		3FE64A492B4D173A005D1E4B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +67,12 @@
 		3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
 		3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewReactor.swift; sourceTree = "<group>"; };
+		3FE64A272B4B82B9005D1E4B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3FE64A2D2B4B8586005D1E4B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInfo.swift; sourceTree = "<group>"; };
+		3FE64A342B4B9621005D1E4B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonErrorType.swift; sourceTree = "<group>"; };
+		3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE64A422B4B9E10005D1E4B /* RxMoya in Frameworks */,
 				3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */,
 				3FE649F12B43EBB3005D1E4B /* RxCocoa in Frameworks */,
 				3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */,
@@ -121,6 +135,7 @@
 			children = (
 				3FE649D52B43CE5F005D1E4B /* LaunchScreen.storyboard */,
 				3FE649DF2B43D0B2005D1E4B /* SplashViewController.swift */,
+				3FE64A292B4B82C0005D1E4B /* Network */,
 				3FE649EC2B43E2AF005D1E4B /* Extension */,
 				3FE649F92B44D2DE005D1E4B /* Componet */,
 			);
@@ -195,6 +210,35 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		3FE64A292B4B82C0005D1E4B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A2D2B4B8586005D1E4B /* .gitignore */,
+				3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */,
+				3FE64A272B4B82B9005D1E4B /* APIService.swift */,
+				3FE64A342B4B9621005D1E4B /* APIManager.swift */,
+				3FE64A312B4B8838005D1E4B /* Dto */,
+				3FE64A452B4D0A8C005D1E4B /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3FE64A312B4B8838005D1E4B /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		3FE64A452B4D0A8C005D1E4B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +260,7 @@
 				3FE649F02B43EBB3005D1E4B /* RxCocoa */,
 				3FE649F22B43EBB3005D1E4B /* RxSwift */,
 				3FE64A212B4A78E9005D1E4B /* ReactorKit */,
+				3FE64A412B4B9E10005D1E4B /* RxMoya */,
 			);
 			productName = Workspace;
 			productReference = 3FE649C72B43CE5D005D1E4B /* Workspace.app */;
@@ -249,6 +294,7 @@
 				3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				3FE64A402B4B9E10005D1E4B /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 3FE649C82B43CE5D005D1E4B /* Products */;
 			projectDirPath = "";
@@ -265,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE649D72B43CE5F005D1E4B /* LaunchScreen.storyboard in Resources */,
+				3FE64A2E2B4B8586005D1E4B /* .gitignore in Resources */,
 				3FE649D42B43CE5F005D1E4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +323,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE64A492B4D173A005D1E4B /* ErrorResponse.swift in Sources */,
+				3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */,
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
 				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
@@ -286,12 +335,15 @@
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
 				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
+				3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */,
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
+				3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */,
 				3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */,
 				3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */,
 				3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */,
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
+				3FE64A282B4B82B9005D1E4B /* APIService.swift in Sources */,
 				3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,
 				3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */,
@@ -544,6 +596,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		3FE64A402B4B9E10005D1E4B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -566,6 +626,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		3FE64A412B4B9E10005D1E4B /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FE64A402B4B9E10005D1E4B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

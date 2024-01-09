@@ -38,7 +38,7 @@ final class SignUpView: BaseView {
         view.button.backgroundColor = .bdInactive
         return view
     }()
-    
+
     func activeEmailCheckButton(isActive: Bool) {
         emailCheckButton.isEnabled = isActive
         emailCheckButton.backgroundColor = isActive ? .bdGreen : .bdInactive
