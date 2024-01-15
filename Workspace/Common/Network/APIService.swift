@@ -10,6 +10,7 @@ import Moya
 
 enum APIService: TargetType {
     case validationEmail(String)
+    case join(JoinModel)
 }
 
 extension APIService {
@@ -18,12 +19,13 @@ extension APIService {
     var path: String {
         switch self {
         case .validationEmail: "/v1/users/validation/email"
+        case .join: "/v1/users/join"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .validationEmail: .post
+        case .validationEmail, .join: .post
         }
     }
     
@@ -31,12 +33,16 @@ extension APIService {
         switch self {
         case .validationEmail(let email):
             return .requestParameters(parameters: ["email": email], encoding: JSONEncoding.default)
+        case .join(let data):
+            return .requestJSONEncodable(data)
         }
     }
     
     var headers: [String : String]? {
         switch self {
         case .validationEmail:
+            ["SesacKey" : APIInfo.key]
+        case .join:
             ["SesacKey" : APIInfo.key]
         }
     }

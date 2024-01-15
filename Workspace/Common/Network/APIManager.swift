@@ -14,29 +14,31 @@ class APIManager {
     
     static let shared = APIManager()
     private let provider = MoyaProvider<APIService>()
-    
-    func decode<T>(endPoint: APIService, decodingType: T.Type) {
-        //provider.rx.request(endPoint).filterSuccessfulStatusCodes()
-    }
-    
-    func encode(endPoint: APIService) -> Single<Response> {
-        provider.rx.request(endPoint).filterSuccessfulStatusCodes()
-            .catch { error -> Single<Response> in
-                if let data = (error as? MoyaError)?.response?.data {
-                    do {
-                        let decodeError = try JSONDecoder().decode(ErrorResponse.self, from: data)
-                        
-                        guard let commonError = CommonErrorType(rawValue: decodeError.errorCode) else { return Single.error(error) }
+    private let disposeBag = DisposeBag()
+
+    func reqeust<T: Decodable>(endPoint: APIService, returnModel: T.Type) -> Single<T> {
+        provider.rx.request(endPoint).flatMap { response -> Single<T> in
+            do {
+                   let data = try JSONDecoder().decode(returnModel.self, from: response.data)
+                   return Single.just(data)
+            } catch {
+                do {
+                    let decodeError = try JSONDecoder().decode(ErrorResponseModel.self, from: response.data)
+                    
+                    if let commonError = CommonErrorType(rawValue: decodeError.errorCode) {
+                        print("공통 에러", commonError)
                         commonError.action
-                    } catch {
-                        //Decode 실패 -> action
+                        return Single.never()
+                    } else {
+                        print("커스텀 에러", decodeError.errorCode)
+                        return Single.error(decodeError)
                     }
-                } else {
-                    //JSON 형식의 오류가 아님
-                    //CommonErrorType.E02.action -> 이런식으로 action
+                } catch {
+                    // decode 실패
+                    return Single.error(error)
                 }
-                
-                return Single.never()
             }
+                   
+        }
     }
 }

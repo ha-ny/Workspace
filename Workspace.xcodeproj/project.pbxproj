@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F72435C2B51307F00781219 /* SaveToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72435B2B51307F00781219 /* SaveToken.swift */; };
+		3F7243612B5515C300781219 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7243602B5515C300781219 /* SnapKit */; };
 		3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */; };
 		3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */; };
 		3FE649D42B43CE5F005D1E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE649D32B43CE5F005D1E4B /* Assets.xcassets */; };
 		3FE649D72B43CE5F005D1E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE649D52B43CE5F005D1E4B /* LaunchScreen.storyboard */; };
 		3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649DF2B43D0B2005D1E4B /* SplashViewController.swift */; };
 		3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649E12B43D0E8005D1E4B /* OnboardingView.swift */; };
-		3FE649E52B43D12B005D1E4B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE649E42B43D12B005D1E4B /* SnapKit */; };
 		3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649E82B43DB41005D1E4B /* BaseView.swift */; };
 		3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */; };
 		3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649ED2B43EB45005D1E4B /* OnboardingViewController.swift */; };
@@ -39,10 +40,15 @@
 		3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A342B4B9621005D1E4B /* APIManager.swift */; };
 		3FE64A422B4B9E10005D1E4B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A412B4B9E10005D1E4B /* RxMoya */; };
 		3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */; };
-		3FE64A492B4D173A005D1E4B /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */; };
+		3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */; };
+		3FE64A4B2B4D2E7B005D1E4B /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */; };
+		3FE64A4D2B4D2FB3005D1E4B /* JoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */; };
+		3FE64A512B4D3406005D1E4B /* JoinMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */; };
+		3FE64A5A2B4FA7D4005D1E4B /* EmptyResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F72435B2B51307F00781219 /* SaveToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToken.swift; sourceTree = "<group>"; };
 		3FE649C72B43CE5D005D1E4B /* Workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +78,12 @@
 		3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInfo.swift; sourceTree = "<group>"; };
 		3FE64A342B4B9621005D1E4B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonErrorType.swift; sourceTree = "<group>"; };
-		3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
+		3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
+		3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinResponseModel.swift; sourceTree = "<group>"; };
+		3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinMessageType.swift; sourceTree = "<group>"; };
+		3FE64A582B4FA2D1005D1E4B /* Workspace.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Workspace.entitlements; path = ../../../../../.Trash/Workspace.entitlements; sourceTree = "<group>"; };
+		3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +95,7 @@
 				3FE649F32B43EBB3005D1E4B /* RxSwift in Frameworks */,
 				3FE649F12B43EBB3005D1E4B /* RxCocoa in Frameworks */,
 				3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */,
-				3FE649E52B43D12B005D1E4B /* SnapKit in Frameworks */,
+				3F7243612B5515C300781219 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +121,7 @@
 		3FE649C92B43CE5D005D1E4B /* Workspace */ = {
 			isa = PBXGroup;
 			children = (
+				3FE64A582B4FA2D1005D1E4B /* Workspace.entitlements */,
 				3FE649E62B43D146005D1E4B /* Common */,
 				3FE649DE2B43D07C005D1E4B /* Onboarding */,
 				3FE64A152B47E220005D1E4B /* Home */,
@@ -135,7 +147,9 @@
 			children = (
 				3FE649D52B43CE5F005D1E4B /* LaunchScreen.storyboard */,
 				3FE649DF2B43D0B2005D1E4B /* SplashViewController.swift */,
+				3F72435B2B51307F00781219 /* SaveToken.swift */,
 				3FE64A292B4B82C0005D1E4B /* Network */,
+				3FE64A4F2B4D33EA005D1E4B /* Message */,
 				3FE649EC2B43E2AF005D1E4B /* Extension */,
 				3FE649F92B44D2DE005D1E4B /* Componet */,
 			);
@@ -226,7 +240,9 @@
 		3FE64A312B4B8838005D1E4B /* Dto */ = {
 			isa = PBXGroup;
 			children = (
-				3FE64A482B4D173A005D1E4B /* ErrorResponse.swift */,
+				3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */,
+				3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */,
+				3FE64A4E2B4D2FC6005D1E4B /* Join */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -237,6 +253,23 @@
 				3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		3FE64A4E2B4D2FC6005D1E4B /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */,
+				3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		3FE64A4F2B4D33EA005D1E4B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,11 +289,11 @@
 			);
 			name = Workspace;
 			packageProductDependencies = (
-				3FE649E42B43D12B005D1E4B /* SnapKit */,
 				3FE649F02B43EBB3005D1E4B /* RxCocoa */,
 				3FE649F22B43EBB3005D1E4B /* RxSwift */,
 				3FE64A212B4A78E9005D1E4B /* ReactorKit */,
 				3FE64A412B4B9E10005D1E4B /* RxMoya */,
+				3F7243602B5515C300781219 /* SnapKit */,
 			);
 			productName = Workspace;
 			productReference = 3FE649C72B43CE5D005D1E4B /* Workspace.app */;
@@ -291,10 +324,10 @@
 			);
 			mainGroup = 3FE649BE2B43CE5D005D1E4B;
 			packageReferences = (
-				3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3FE649EF2B43EBB3005D1E4B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				3FE64A202B4A78E9005D1E4B /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				3FE64A402B4B9E10005D1E4B /* XCRemoteSwiftPackageReference "Moya" */,
+				3F72435F2B5515C300781219 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 3FE649C82B43CE5D005D1E4B /* Products */;
 			projectDirPath = "";
@@ -323,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE64A492B4D173A005D1E4B /* ErrorResponse.swift in Sources */,
+				3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */,
 				3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */,
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
@@ -336,6 +369,7 @@
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
 				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
 				3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */,
+				3FE64A4D2B4D2FB3005D1E4B /* JoinResponseModel.swift in Sources */,
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
 				3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */,
 				3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */,
@@ -344,8 +378,12 @@
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
 				3FE64A282B4B82B9005D1E4B /* APIService.swift in Sources */,
+				3F72435C2B51307F00781219 /* SaveToken.swift in Sources */,
+				3FE64A5A2B4FA7D4005D1E4B /* EmptyResponseModel.swift in Sources */,
 				3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */,
+				3FE64A512B4D3406005D1E4B /* JoinMessageType.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,
+				3FE64A4B2B4D2E7B005D1E4B /* JoinModel.swift in Sources */,
 				3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */,
 				3FE649F82B44CDB7005D1E4B /* AuthView.swift in Sources */,
 			);
@@ -491,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Workspace/Workspace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFCS5T44FS;
@@ -522,6 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Workspace/Workspace.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFCS5T44FS;
@@ -572,7 +612,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		3F72435F2B5515C300781219 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -607,9 +647,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3FE649E42B43D12B005D1E4B /* SnapKit */ = {
+		3F7243602B5515C300781219 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3FE649E32B43D12B005D1E4B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 3F72435F2B5515C300781219 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 		3FE649F02B43EBB3005D1E4B /* RxCocoa */ = {

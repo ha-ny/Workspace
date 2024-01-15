@@ -8,32 +8,6 @@
 import UIKit
 
 extension UIViewController {
-    
-    enum Detent {
-        case large
-        case medium
-        case custom(CGFloat)
-    }
-    
-    func bottomSheet(view: UIViewController, detent: Detent, isGrab: Bool = false){
-        guard let sheet = view.sheetPresentationController else { return }
-        
-        var detents: UISheetPresentationController.Detent {
-            switch detent {
-            case .large: return .large()
-            case .medium: return .medium()
-            case .custom(let num):
-                return .custom(resolver: { _ in num })
-            }
-        }
-
-        sheet.detents = [detents]
-        sheet.preferredCornerRadius = 10
-        sheet.prefersGrabberVisible = isGrab
-        
-        self.present(view, animated: true)
-    }
-    
     func toastMessage(title: String, centerView: UIView) {
         let view =  TextButtonView(style: .fill, title: title).button
         view.titleLabel?.font = .body

@@ -9,7 +9,7 @@ import Foundation
 
 enum CommonErrorType: String, LocalizedError {
     case E01 //접근권한: Key 관리 -> X
-    case E02 //토큰 인증 실패 -> 토큰 갱신
+    case E02 //토큰 인증 실패
     case E03 //계정 정보 조회 실패
     case E05 //AccessToken 만료 -> 토큰 갱신
     case E97 //정상 라우터가 아님 -> X

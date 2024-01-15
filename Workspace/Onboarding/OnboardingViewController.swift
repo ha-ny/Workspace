@@ -30,7 +30,14 @@ final class OnboardingViewController: UIViewController {
     
     private func bind() {
         mainView.startButtonView.button.rx.tap.subscribe(with: self) { owner, _ in
-            owner.bottomSheet(view: AuthViewController(), detent: .custom(269), isGrab: true)
+            let vc = AuthViewController()
+            if let sheet = vc.sheetPresentationController {
+                sheet.detents = [.custom(resolver: {_ in 269 })]
+                sheet.preferredCornerRadius = 10
+                sheet.prefersGrabberVisible = true
+            }
+            
+            self.present(vc, animated: true)
         }.disposed(by: disposeBag)
     }
 }
