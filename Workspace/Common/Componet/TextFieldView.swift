@@ -9,7 +9,7 @@ import UIKit
 
 final class TextFieldView: BaseView {
     
-    private lazy var label = {
+    lazy var label = {
        let view = UILabel()
         view.font = .title2
         view.textColor = .bdBlack

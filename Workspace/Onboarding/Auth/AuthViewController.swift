@@ -33,12 +33,9 @@ final class AuthViewController: UIViewController {
             mainView.signButton.rx.tap.map { AuthType.sign }
         )
         
-        taps.subscribe(onNext: { [weak self]auth in
-            guard let self, let pvc = self.presentingViewController else { return }
-            
-            self.dismiss(animated: true) {
-                auth.action(pvc)
-            }
+        taps.subscribe(onNext: { [weak self] type in
+            guard let self else { return }
+            type.action(self)
         }).disposed(by: disposeBag)
     }
 }
@@ -50,19 +47,19 @@ extension AuthViewController {
         case email
         case sign
         
-        var action: ((UIViewController) -> Void) {
+        var action: ((AuthViewController) -> Void) {
             switch self {
             case .apple: { view in
-                
+
             }
             case .kakao: { view in
                 
             }
             case .email: { view in
-                view.bottomSheet(view: EmailLoginViewController(), detent: .large)
+                view.present(EmailLoginViewController(), animated: true)
             }
             case .sign: { view in
-                view.bottomSheet(view: SignUpViewController(), detent: .large)
+                view.present(SignUpViewController(), animated: true)
             }
             }
         }

@@ -10,6 +10,7 @@ import UIKit
 final class SignUpView: BaseView {
 
     let navigationView = NavigationView(title: "회원가입")
+    let fieldView = UIView()
     let emailView = TextFieldView(title: "이메일", placeholder: "이메일을 입력하세요")
     
     let emailCheckButton = {
@@ -19,7 +20,11 @@ final class SignUpView: BaseView {
     }()
     
     let nickNameView = TextFieldView(title: "닉네임", placeholder: "닉네임을 입력하세요")
-    let phoneView = TextFieldView(title: "연락처", placeholder: "전화번호를 입력하세요")
+    let phoneView = {
+        let view = TextFieldView(title: "연락처", placeholder: "전화번호를 입력하세요")
+        view.textField.keyboardType = .numberPad
+        return view
+    }()
     
     let passwordView = {
         let view = TextFieldView(title: "비밀번호", placeholder: "비밀번호를 입력하세요")
@@ -36,17 +41,25 @@ final class SignUpView: BaseView {
     let signUpButtonView = {
         let view =  TextButtonView(style: .fill, title: "가입하기")
         view.button.backgroundColor = .bdInactive
+        view.button.isEnabled = true
         return view
     }()
+
+    func activeButton(button: UIButton, isActive: Bool) {
+        button.isEnabled = isActive
+        button.backgroundColor = isActive ? .bdGreen : .bdInactive
+    }
     
     override func setConfiguration() {
+        addSubview(fieldView)
+        fieldView.addSubview(emailView)
+        fieldView.addSubview(emailCheckButton)
+        fieldView.addSubview(nickNameView)
+        fieldView.addSubview(phoneView)
+        fieldView.addSubview(passwordView)
+        fieldView.addSubview(passwordCheckView)
+        
         addSubview(navigationView)
-        addSubview(emailView)
-        addSubview(emailCheckButton)
-        addSubview(nickNameView)
-        addSubview(phoneView)
-        addSubview(passwordView)
-        addSubview(passwordCheckView)
         addSubview(signUpButtonView)
     }
     
@@ -55,6 +68,12 @@ final class SignUpView: BaseView {
             $0.horizontalEdges.top.equalToSuperview()
         }
 
+        fieldView.snp.makeConstraints {
+            $0.top.equalTo(navigationView.snp.bottom)
+            $0.horizontalEdges.equalToSuperview()
+            $0.bottom.equalTo(safeAreaLayoutGuide)
+        }
+        
         let views = [emailView, nickNameView, phoneView, passwordView, passwordCheckView]
         
         views.enumerated().forEach { index, view in

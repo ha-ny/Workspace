@@ -3,4 +3,150 @@
    uuid = "72CF00C1-9AFB-45FF-93D8-5CFA7A27B382"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A166A0EE-B56A-494B-9E7C-5FAE6B54BD53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Workspace/Common/Network/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "reqeust(endPoint:returnModel:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A166A0EE-B56A-494B-9E7C-5FAE6B54BD53 - c8d1fcee4c5c736"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Workspace.APIManager.encode&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endPoint: Workspace.APIService, returnModel: &#x3c4;_0_0.Type) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x3c4;_0_0&gt;"
+                  moduleName = "Workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hany/Desktop/hany/app/Workspace/Workspace/Common/Network/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "A166A0EE-B56A-494B-9E7C-5FAE6B54BD53 - 9897c2b2dfb037e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Moya.Response) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x3c4;_0_0&gt; in Workspace.APIManager.reqeust&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(endPoint: Workspace.APIService, returnModel: &#x3c4;_0_0.Type) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x3c4;_0_0&gt;"
+                  moduleName = "Workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hany/Desktop/hany/app/Workspace/Workspace/Common/Network/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42C88978-F87D-4612-B364-A220B3BA5FD6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "mutate(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31F017E4-32D6-449B-BC39-3AA5836E453D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "mutate(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76E17CDF-8C08-48E1-8E5F-69F3EE2EE630"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "mutate(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DC19E90-4DDB-4B45-BD71-DF78E0E5F29A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "mutate(action:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8DC19E90-4DDB-4B45-BD71-DF78E0E5F29A - a471ec72f898b218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; RxSwift.Observable&lt;Workspace.SignUpViewReactor.Mutation&gt; in Workspace.SignUpViewReactor.mutate(action: Workspace.SignUpViewReactor.Action) -&gt; RxSwift.Observable&lt;Workspace.SignUpViewReactor.Mutation&gt;"
+                  moduleName = "Workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hany/Desktop/hany/app/Workspace/Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "8DC19E90-4DDB-4B45-BD71-DF78E0E5F29A - a471ec72f898b218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; RxSwift.Observable&lt;Workspace.SignUpViewReactor.Mutation&gt; in Workspace.SignUpViewReactor.mutate(action: Workspace.SignUpViewReactor.Action) -&gt; RxSwift.Observable&lt;Workspace.SignUpViewReactor.Mutation&gt;"
+                  moduleName = "Workspace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hany/Desktop/hany/app/Workspace/Workspace/Onboarding/Auth/SignUp/SignUpViewReactor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
