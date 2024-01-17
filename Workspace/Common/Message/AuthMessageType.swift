@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum JoinMessageType {
+enum AuthMessageType {
     case emailCheckNeeded
     case validEmail
     case invalidEmail
@@ -20,7 +20,7 @@ enum JoinMessageType {
     case otherError
 }
 
-extension JoinMessageType {
+extension AuthMessageType {
     var text: String {
         switch self {
         case .emailCheckNeeded: "이메일 중복 확인을 진행해주세요"

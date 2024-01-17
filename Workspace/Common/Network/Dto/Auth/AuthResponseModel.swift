@@ -1,5 +1,5 @@
 //
-//  JoinResponseModel.swift
+//  AuthResponseModel.swift
 //  Workspace
 //
 //  Created by 김하은 on 1/9/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct JoinResponseModel: Decodable {
+struct AuthResponseModel: Decodable {
     let user_id: Int
     let email: String
     let nickname: String

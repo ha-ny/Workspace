@@ -104,8 +104,8 @@ final class SignUpViewController: UIViewController {
         )
         .map { $0 && $1 && $2 && $3 }
         .distinctUntilChanged()
-        .subscribe(with: self) { owner, value in
-            owner.mainView.activeButton(button: owner.mainView.signUpButtonView.button, isActive: value)
+        .subscribe(with: self) { owner, isActive in
+            owner.mainView.signUpButtonView.button.activeState(isActive: isActive)
         }
         .disposed(by: disposeBag)
 
@@ -113,7 +113,7 @@ final class SignUpViewController: UIViewController {
             .map { [weak self] _ -> SignUpViewReactor.Action? in
                 guard let self else { return nil }
                 guard mainView.passwordView.textField.text == mainView.passwordCheckView.textField.text else {
-                    toastMessage(title: JoinMessageType.passwordMismatch.text, centerView: self.mainView.signUpButtonView)
+                    toastMessage(title: AuthMessageType.passwordMismatch.text, centerView: self.mainView.signUpButtonView)
                     return nil
                 }
                 
@@ -132,14 +132,14 @@ final class SignUpViewController: UIViewController {
     
     private func bindState() {
         reactor.state.map(\.emailValidate).distinctUntilChanged()
-            .subscribe(with: self) { owner, isValidation in
-                owner.mainView.activeButton(button: owner.mainView.emailCheckButton, isActive: isValidation)
+            .subscribe(with: self) { owner, isValidate in
+                owner.mainView.emailCheckButton.activeState(isActive: isValidate)
             }
             .disposed(by: disposeBag)
         
         reactor.state.map(\.emailCheck).compactMap { $0 }
             .subscribe(with: self, onNext: { owner, bool in
-                let type = bool ? JoinMessageType.validEmail : JoinMessageType.invalidEmail
+                let type = bool ? AuthMessageType.validEmail : AuthMessageType.invalidEmail
                 owner.toastMessage(title: type.text, centerView: owner.mainView.signUpButtonView)
             }).disposed(by: disposeBag)
 
