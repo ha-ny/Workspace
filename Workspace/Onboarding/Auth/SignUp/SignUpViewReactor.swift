@@ -12,7 +12,7 @@ import ReactorKit
 final class SignUpViewReactor: Reactor {
     var initialState = State()
     
-    let apiManager = APIManager.shared
+    let apiManager = AuthAPIManager()
     private let disposeBag = DisposeBag()
     
     enum Action {
@@ -26,16 +26,16 @@ final class SignUpViewReactor: Reactor {
         case isEmailRegex(Bool)
         case isEmailValidation(Bool)
         case phoneRegex(String?)
-        case signUpValidationType(JoinMessageType)
-        case signUpValidationModel(JoinResponseModel)
+        case signUpValidationType(AuthMessageType)
+        case signUpValidationModel(AuthResponseModel)
     }
     
     struct State {
         var emailValidate = false
         var emailCheck: Bool?
         var phoneHyphen: String?
-        var signUpMessage: JoinMessageType?
-        var signUpModel: JoinResponseModel?
+        var signUpMessage: AuthMessageType?
+        var signUpModel: AuthResponseModel?
     }
 }
 
@@ -43,8 +43,8 @@ extension SignUpViewReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .emailTextChanged(let email):
-            let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
-            let isCheck = NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+            let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
+            let isCheck = email.isRegexValid(regex: regex)
             return .just(.isEmailRegex(isCheck))
         case .emailCheckButtonTap(let email):
             return apiManager.reqeust(endPoint: .validationEmail(email), returnModel: EmptyResponseModel.self).asObservable()
@@ -72,10 +72,14 @@ extension SignUpViewReactor {
         case .signUpButtonTap(let model):
             guard let _ = currentState.emailCheck else { return .just(.signUpValidationType(.emailCheckNeeded))}
             guard (1...30).contains(model.nickname.count) else { return .just(.signUpValidationType(.invalidNickname))}
-
+            
+            let regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$"
+            let isPasswordCheck = model.password.isRegexValid(regex: regex)
+            guard isPasswordCheck else { return .just(.signUpValidationType(.invalidPassword))}
+            
             let data = JoinModel(email: model.email, password: model.password, nickname: model.nickname, phone: model.phone, deviceToken: nil)
             
-            return apiManager.reqeust(endPoint: .join(data), returnModel: JoinResponseModel.self).asObservable()
+            return apiManager.reqeust(endPoint: .join(data), returnModel: AuthResponseModel.self).asObservable()
                 .flatMap { data -> Observable<Mutation> in
                     return .just(.signUpValidationModel(data))
                 }.catch { error in

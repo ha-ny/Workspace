@@ -45,11 +45,6 @@ final class SignUpView: BaseView {
         return view
     }()
 
-    func activeButton(button: UIButton, isActive: Bool) {
-        button.isEnabled = isActive
-        button.backgroundColor = isActive ? .bdGreen : .bdInactive
-    }
-    
     override func setConfiguration() {
         addSubview(fieldView)
         fieldView.addSubview(emailView)

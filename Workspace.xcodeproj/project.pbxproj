@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3F72435C2B51307F00781219 /* SaveToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72435B2B51307F00781219 /* SaveToken.swift */; };
 		3F7243612B5515C300781219 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7243602B5515C300781219 /* SnapKit */; };
+		3F7243642B557CD900781219 /* EmailLoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243632B557CD900781219 /* EmailLoginViewReactor.swift */; };
+		3F7243662B55877800781219 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243652B55877800781219 /* String+extension.swift */; };
+		3F7243682B558A2C00781219 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243672B558A2C00781219 /* LoginModel.swift */; };
+		3F72436A2B56727D00781219 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243692B56727D00781219 /* UIButton+extension.swift */; };
+		3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */; };
 		3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */; };
 		3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */; };
 		3FE649D42B43CE5F005D1E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE649D32B43CE5F005D1E4B /* Assets.xcassets */; };
@@ -34,21 +39,26 @@
 		3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */; };
 		3FE64A222B4A78E9005D1E4B /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A212B4A78E9005D1E4B /* ReactorKit */; };
 		3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */; };
-		3FE64A282B4B82B9005D1E4B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A272B4B82B9005D1E4B /* APIService.swift */; };
+		3FE64A282B4B82B9005D1E4B /* AuthAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A272B4B82B9005D1E4B /* AuthAPIManager.swift */; };
 		3FE64A2E2B4B8586005D1E4B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3FE64A2D2B4B8586005D1E4B /* .gitignore */; };
 		3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */; };
-		3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A342B4B9621005D1E4B /* APIManager.swift */; };
+		3FE64A352B4B9621005D1E4B /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A342B4B9621005D1E4B /* APIManagerProtocol.swift */; };
 		3FE64A422B4B9E10005D1E4B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3FE64A412B4B9E10005D1E4B /* RxMoya */; };
 		3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */; };
 		3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */; };
 		3FE64A4B2B4D2E7B005D1E4B /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */; };
-		3FE64A4D2B4D2FB3005D1E4B /* JoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */; };
-		3FE64A512B4D3406005D1E4B /* JoinMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */; };
+		3FE64A4D2B4D2FB3005D1E4B /* AuthResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A4C2B4D2FB3005D1E4B /* AuthResponseModel.swift */; };
+		3FE64A512B4D3406005D1E4B /* AuthMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A502B4D3406005D1E4B /* AuthMessageType.swift */; };
 		3FE64A5A2B4FA7D4005D1E4B /* EmptyResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F72435B2B51307F00781219 /* SaveToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToken.swift; sourceTree = "<group>"; };
+		3F7243632B557CD900781219 /* EmailLoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewReactor.swift; sourceTree = "<group>"; };
+		3F7243652B55877800781219 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		3F7243672B558A2C00781219 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3F7243692B56727D00781219 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyViewController.swift; sourceTree = "<group>"; };
 		3FE649C72B43CE5D005D1E4B /* Workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,15 +83,15 @@
 		3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonView.swift; sourceTree = "<group>"; };
 		3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3FE64A252B4A990C005D1E4B /* SignUpViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewReactor.swift; sourceTree = "<group>"; };
-		3FE64A272B4B82B9005D1E4B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3FE64A272B4B82B9005D1E4B /* AuthAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIManager.swift; sourceTree = "<group>"; };
 		3FE64A2D2B4B8586005D1E4B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInfo.swift; sourceTree = "<group>"; };
-		3FE64A342B4B9621005D1E4B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3FE64A342B4B9621005D1E4B /* APIManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
 		3FE64A462B4D0A9A005D1E4B /* CommonErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonErrorType.swift; sourceTree = "<group>"; };
 		3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
 		3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
-		3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinResponseModel.swift; sourceTree = "<group>"; };
-		3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinMessageType.swift; sourceTree = "<group>"; };
+		3FE64A4C2B4D2FB3005D1E4B /* AuthResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponseModel.swift; sourceTree = "<group>"; };
+		3FE64A502B4D3406005D1E4B /* AuthMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMessageType.swift; sourceTree = "<group>"; };
 		3FE64A582B4FA2D1005D1E4B /* Workspace.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Workspace.entitlements; path = ../../../../../.Trash/Workspace.entitlements; sourceTree = "<group>"; };
 		3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7243622B557AD800781219 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FE64A272B4B82B9005D1E4B /* AuthAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		3FE649BE2B43CE5D005D1E4B = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +188,8 @@
 			children = (
 				3FE649EA2B43E2A4005D1E4B /* UIFont+extension.swift */,
 				3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */,
+				3F7243652B55877800781219 /* String+extension.swift */,
+				3F7243692B56727D00781219 /* UIButton+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -212,6 +232,7 @@
 			children = (
 				3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */,
 				3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */,
+				3F7243632B557CD900781219 /* EmailLoginViewReactor.swift */,
 			);
 			path = EmailLogin;
 			sourceTree = "<group>";
@@ -220,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */,
+				3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -229,8 +251,8 @@
 			children = (
 				3FE64A2D2B4B8586005D1E4B /* .gitignore */,
 				3FE64A2F2B4B859D005D1E4B /* APIInfo.swift */,
-				3FE64A272B4B82B9005D1E4B /* APIService.swift */,
-				3FE64A342B4B9621005D1E4B /* APIManager.swift */,
+				3FE64A342B4B9621005D1E4B /* APIManagerProtocol.swift */,
+				3F7243622B557AD800781219 /* APIManager */,
 				3FE64A312B4B8838005D1E4B /* Dto */,
 				3FE64A452B4D0A8C005D1E4B /* Error */,
 			);
@@ -242,7 +264,7 @@
 			children = (
 				3FE64A482B4D173A005D1E4B /* ErrorResponseModel.swift */,
 				3FE64A592B4FA7D4005D1E4B /* EmptyResponseModel.swift */,
-				3FE64A4E2B4D2FC6005D1E4B /* Join */,
+				3FE64A4E2B4D2FC6005D1E4B /* Auth */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -255,19 +277,20 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
-		3FE64A4E2B4D2FC6005D1E4B /* Join */ = {
+		3FE64A4E2B4D2FC6005D1E4B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				3FE64A4A2B4D2E7A005D1E4B /* JoinModel.swift */,
-				3FE64A4C2B4D2FB3005D1E4B /* JoinResponseModel.swift */,
+				3FE64A4C2B4D2FB3005D1E4B /* AuthResponseModel.swift */,
+				3F7243672B558A2C00781219 /* LoginModel.swift */,
 			);
-			path = Join;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		3FE64A4F2B4D33EA005D1E4B /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				3FE64A502B4D3406005D1E4B /* JoinMessageType.swift */,
+				3FE64A502B4D3406005D1E4B /* AuthMessageType.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -357,19 +380,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */,
-				3FE64A352B4B9621005D1E4B /* APIManager.swift in Sources */,
+				3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */,
+				3FE64A352B4B9621005D1E4B /* APIManagerProtocol.swift in Sources */,
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
 				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
+				3F7243662B55877800781219 /* String+extension.swift in Sources */,
 				3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */,
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
 				3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */,
+				3F7243642B557CD900781219 /* EmailLoginViewReactor.swift in Sources */,
 				3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */,
+				3F72436A2B56727D00781219 /* UIButton+extension.swift in Sources */,
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
 				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
 				3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */,
-				3FE64A4D2B4D2FB3005D1E4B /* JoinResponseModel.swift in Sources */,
+				3FE64A4D2B4D2FB3005D1E4B /* AuthResponseModel.swift in Sources */,
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
 				3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */,
 				3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */,
@@ -377,14 +404,15 @@
 				3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */,
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
-				3FE64A282B4B82B9005D1E4B /* APIService.swift in Sources */,
+				3FE64A282B4B82B9005D1E4B /* AuthAPIManager.swift in Sources */,
 				3F72435C2B51307F00781219 /* SaveToken.swift in Sources */,
 				3FE64A5A2B4FA7D4005D1E4B /* EmptyResponseModel.swift in Sources */,
 				3FE64A1F2B4A648F005D1E4B /* HomeViewController.swift in Sources */,
-				3FE64A512B4D3406005D1E4B /* JoinMessageType.swift in Sources */,
+				3FE64A512B4D3406005D1E4B /* AuthMessageType.swift in Sources */,
 				3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */,
 				3FE64A4B2B4D2E7B005D1E4B /* JoinModel.swift in Sources */,
 				3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */,
+				3F7243682B558A2C00781219 /* LoginModel.swift in Sources */,
 				3FE649F82B44CDB7005D1E4B /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
