@@ -1,5 +1,5 @@
 //
-//  NavigationView.swift
+//  ModalNavigationView.swift
 //  Workspace
 //
 //  Created by 김하은 on 1/3/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NavigationView: BaseView {
+final class ModalNavigationView: BaseView {
     
     private lazy var label = {
        let view = UILabel()

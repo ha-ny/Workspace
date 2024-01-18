@@ -14,6 +14,10 @@
 		3F7243682B558A2C00781219 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243672B558A2C00781219 /* LoginModel.swift */; };
 		3F72436A2B56727D00781219 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243692B56727D00781219 /* UIButton+extension.swift */; };
 		3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */; };
+		3F72436F2B57A62C00781219 /* HomeEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72436E2B57A62C00781219 /* HomeEmptyView.swift */; };
+		3F7243712B57A73D00781219 /* HomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243702B57A73D00781219 /* HomeNavigationView.swift */; };
+		3F7243742B59AA1D00781219 /* CreateWSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243732B59AA1D00781219 /* CreateWSController.swift */; };
+		3F7243772B59AD1E00781219 /* WSListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243762B59AD1E00781219 /* WSListViewController.swift */; };
 		3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */; };
 		3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */; };
 		3FE649D42B43CE5F005D1E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE649D32B43CE5F005D1E4B /* Assets.xcassets */; };
@@ -31,7 +35,7 @@
 		3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A062B452E66005D1E4B /* SignUpViewController.swift */; };
 		3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A082B452E6F005D1E4B /* SignUpView.swift */; };
 		3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0A2B453036005D1E4B /* TextFieldView.swift */; };
-		3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */; };
+		3FE64A0F2B47D8A2005D1E4B /* ModalNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A0E2B47D8A2005D1E4B /* ModalNavigationView.swift */; };
 		3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */; };
 		3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */; };
 		3FE64A192B4A53F1005D1E4B /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */; };
@@ -59,6 +63,10 @@
 		3F7243672B558A2C00781219 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		3F7243692B56727D00781219 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
 		3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyViewController.swift; sourceTree = "<group>"; };
+		3F72436E2B57A62C00781219 /* HomeEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyView.swift; sourceTree = "<group>"; };
+		3F7243702B57A73D00781219 /* HomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationView.swift; sourceTree = "<group>"; };
+		3F7243732B59AA1D00781219 /* CreateWSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWSController.swift; sourceTree = "<group>"; };
+		3F7243762B59AD1E00781219 /* WSListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSListViewController.swift; sourceTree = "<group>"; };
 		3FE649C72B43CE5D005D1E4B /* Workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +84,7 @@
 		3FE64A062B452E66005D1E4B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3FE64A082B452E6F005D1E4B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3FE64A0A2B453036005D1E4B /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
-		3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		3FE64A0E2B47D8A2005D1E4B /* ModalNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationView.swift; sourceTree = "<group>"; };
 		3FE64A102B47E047005D1E4B /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		3FE64A132B47E0D1005D1E4B /* EmailLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginView.swift; sourceTree = "<group>"; };
 		3FE64A182B4A53F1005D1E4B /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
@@ -120,6 +128,32 @@
 			path = APIManager;
 			sourceTree = "<group>";
 		};
+		3F72436D2B57A61A00781219 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				3F72436E2B57A62C00781219 /* HomeEmptyView.swift */,
+				3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		3F7243752B59ACC600781219 /*  WS - WorkSpace */ = {
+			isa = PBXGroup;
+			children = (
+				3F7243762B59AD1E00781219 /* WSListViewController.swift */,
+				3F7243782B59AD2500781219 /* Create */,
+			);
+			path = " WS - WorkSpace";
+			sourceTree = "<group>";
+		};
+		3F7243782B59AD2500781219 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				3F7243732B59AA1D00781219 /* CreateWSController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 		3FE649BE2B43CE5D005D1E4B = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +177,7 @@
 				3FE649E62B43D146005D1E4B /* Common */,
 				3FE649DE2B43D07C005D1E4B /* Onboarding */,
 				3FE64A152B47E220005D1E4B /* Home */,
+				3F7243752B59ACC600781219 /*  WS - WorkSpace */,
 				3FE649E72B43D167005D1E4B /* Delegate */,
 				3FE649D32B43CE5F005D1E4B /* Assets.xcassets */,
 				3FE649D82B43CE5F005D1E4B /* Info.plist */,
@@ -212,7 +247,8 @@
 				3FE649FC2B44E1A3005D1E4B /* ImageButton.swift */,
 				3FE64A0A2B453036005D1E4B /* TextFieldView.swift */,
 				3FE64A1C2B4A5BE4005D1E4B /* TextButtonView.swift */,
-				3FE64A0E2B47D8A2005D1E4B /* NavigationView.swift */,
+				3FE64A0E2B47D8A2005D1E4B /* ModalNavigationView.swift */,
+				3F7243702B57A73D00781219 /* HomeNavigationView.swift */,
 			);
 			path = Componet;
 			sourceTree = "<group>";
@@ -241,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE64A1E2B4A648F005D1E4B /* HomeViewController.swift */,
-				3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */,
+				3F72436D2B57A61A00781219 /* Empty */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -381,7 +417,9 @@
 			files = (
 				3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */,
 				3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */,
+				3F7243742B59AA1D00781219 /* CreateWSController.swift in Sources */,
 				3FE64A352B4B9621005D1E4B /* APIManagerProtocol.swift in Sources */,
+				3F7243772B59AD1E00781219 /* WSListViewController.swift in Sources */,
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
 				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
@@ -390,6 +428,7 @@
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
 				3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */,
 				3F7243642B557CD900781219 /* EmailLoginViewReactor.swift in Sources */,
+				3F7243712B57A73D00781219 /* HomeNavigationView.swift in Sources */,
 				3FE64A1D2B4A5BE4005D1E4B /* TextButtonView.swift in Sources */,
 				3F72436A2B56727D00781219 /* UIButton+extension.swift in Sources */,
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
@@ -400,10 +439,11 @@
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,
 				3FE64A472B4D0A9A005D1E4B /* CommonErrorType.swift in Sources */,
 				3FE64A112B47E047005D1E4B /* EmailLoginViewController.swift in Sources */,
-				3FE64A0F2B47D8A2005D1E4B /* NavigationView.swift in Sources */,
+				3FE64A0F2B47D8A2005D1E4B /* ModalNavigationView.swift in Sources */,
 				3FE64A092B452E6F005D1E4B /* SignUpView.swift in Sources */,
 				3FE649EE2B43EB45005D1E4B /* OnboardingViewController.swift in Sources */,
 				3FE649E02B43D0B2005D1E4B /* SplashViewController.swift in Sources */,
+				3F72436F2B57A62C00781219 /* HomeEmptyView.swift in Sources */,
 				3FE64A282B4B82B9005D1E4B /* AuthAPIManager.swift in Sources */,
 				3F72435C2B51307F00781219 /* SaveToken.swift in Sources */,
 				3FE64A5A2B4FA7D4005D1E4B /* EmptyResponseModel.swift in Sources */,
