@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F21B3A82B6FB84000BF67F7 /* WSListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21B3A72B6FB84000BF67F7 /* WSListViewController.swift */; };
+		3F21B3AB2B6FB84F00BF67F7 /* CreateWSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21B3A92B6FB84F00BF67F7 /* CreateWSView.swift */; };
+		3F21B3AC2B6FB84F00BF67F7 /* CreateWSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F21B3AA2B6FB84F00BF67F7 /* CreateWSViewController.swift */; };
 		3F72435C2B51307F00781219 /* SaveToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72435B2B51307F00781219 /* SaveToken.swift */; };
 		3F7243612B5515C300781219 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F7243602B5515C300781219 /* SnapKit */; };
 		3F7243642B557CD900781219 /* EmailLoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243632B557CD900781219 /* EmailLoginViewReactor.swift */; };
@@ -16,8 +19,6 @@
 		3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */; };
 		3F72436F2B57A62C00781219 /* HomeEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72436E2B57A62C00781219 /* HomeEmptyView.swift */; };
 		3F7243712B57A73D00781219 /* HomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243702B57A73D00781219 /* HomeNavigationView.swift */; };
-		3F7243742B59AA1D00781219 /* CreateWSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243732B59AA1D00781219 /* CreateWSController.swift */; };
-		3F7243772B59AD1E00781219 /* WSListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7243762B59AD1E00781219 /* WSListViewController.swift */; };
 		3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */; };
 		3FE649CD2B43CE5D005D1E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */; };
 		3FE649D42B43CE5F005D1E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE649D32B43CE5F005D1E4B /* Assets.xcassets */; };
@@ -57,6 +58,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F21B3A72B6FB84000BF67F7 /* WSListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WSListViewController.swift; path = SideMenu/WSListViewController.swift; sourceTree = "<group>"; };
+		3F21B3A92B6FB84F00BF67F7 /* CreateWSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWSView.swift; sourceTree = "<group>"; };
+		3F21B3AA2B6FB84F00BF67F7 /* CreateWSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWSViewController.swift; sourceTree = "<group>"; };
 		3F72435B2B51307F00781219 /* SaveToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToken.swift; sourceTree = "<group>"; };
 		3F7243632B557CD900781219 /* EmailLoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewReactor.swift; sourceTree = "<group>"; };
 		3F7243652B55877800781219 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
@@ -65,8 +69,6 @@
 		3F72436B2B57A2D200781219 /* HomeEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyViewController.swift; sourceTree = "<group>"; };
 		3F72436E2B57A62C00781219 /* HomeEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmptyView.swift; sourceTree = "<group>"; };
 		3F7243702B57A73D00781219 /* HomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationView.swift; sourceTree = "<group>"; };
-		3F7243732B59AA1D00781219 /* CreateWSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWSController.swift; sourceTree = "<group>"; };
-		3F7243762B59AD1E00781219 /* WSListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSListViewController.swift; sourceTree = "<group>"; };
 		3FE649C72B43CE5D005D1E4B /* Workspace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workspace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE649CA2B43CE5D005D1E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE649CC2B43CE5D005D1E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +142,7 @@
 		3F7243752B59ACC600781219 /*  WS - WorkSpace */ = {
 			isa = PBXGroup;
 			children = (
-				3F7243762B59AD1E00781219 /* WSListViewController.swift */,
+				3F21B3A72B6FB84000BF67F7 /* WSListViewController.swift */,
 				3F7243782B59AD2500781219 /* Create */,
 			);
 			path = " WS - WorkSpace";
@@ -149,7 +151,8 @@
 		3F7243782B59AD2500781219 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				3F7243732B59AA1D00781219 /* CreateWSController.swift */,
+				3F21B3A92B6FB84F00BF67F7 /* CreateWSView.swift */,
+				3F21B3AA2B6FB84F00BF67F7 /* CreateWSViewController.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -417,14 +420,14 @@
 			files = (
 				3FE64A492B4D173A005D1E4B /* ErrorResponseModel.swift in Sources */,
 				3F72436C2B57A2D200781219 /* HomeEmptyViewController.swift in Sources */,
-				3F7243742B59AA1D00781219 /* CreateWSController.swift in Sources */,
 				3FE64A352B4B9621005D1E4B /* APIManagerProtocol.swift in Sources */,
-				3F7243772B59AD1E00781219 /* WSListViewController.swift in Sources */,
 				3FE649CB2B43CE5D005D1E4B /* AppDelegate.swift in Sources */,
 				3FE649EB2B43E2A4005D1E4B /* UIFont+extension.swift in Sources */,
+				3F21B3AB2B6FB84F00BF67F7 /* CreateWSView.swift in Sources */,
 				3FE64A142B47E0D1005D1E4B /* EmailLoginView.swift in Sources */,
 				3F7243662B55877800781219 /* String+extension.swift in Sources */,
 				3FE649E22B43D0E8005D1E4B /* OnboardingView.swift in Sources */,
+				3F21B3A82B6FB84000BF67F7 /* WSListViewController.swift in Sources */,
 				3FE649E92B43DB41005D1E4B /* BaseView.swift in Sources */,
 				3FE64A262B4A990C005D1E4B /* SignUpViewReactor.swift in Sources */,
 				3F7243642B557CD900781219 /* EmailLoginViewReactor.swift in Sources */,
@@ -434,6 +437,7 @@
 				3FE649F52B43ECF6005D1E4B /* AuthViewController.swift in Sources */,
 				3FE649FD2B44E1A3005D1E4B /* ImageButton.swift in Sources */,
 				3FE64A072B452E66005D1E4B /* SignUpViewController.swift in Sources */,
+				3F21B3AC2B6FB84F00BF67F7 /* CreateWSViewController.swift in Sources */,
 				3FE64A302B4B859D005D1E4B /* APIInfo.swift in Sources */,
 				3FE64A4D2B4D2FB3005D1E4B /* AuthResponseModel.swift in Sources */,
 				3FE64A0B2B453036005D1E4B /* TextFieldView.swift in Sources */,

@@ -9,8 +9,13 @@ import UIKit
 
 final class CreateWSController: UIViewController {
 
+    private let mainView = CreateWSView()
+    
+    override func loadView() {
+        self.view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
     }
 }
