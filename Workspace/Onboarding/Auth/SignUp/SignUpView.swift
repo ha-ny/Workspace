@@ -9,7 +9,7 @@ import UIKit
 
 final class SignUpView: BaseView {
 
-    let navigationView = NavigationView(title: "회원가입")
+    let navigationView = ModalNavigationView(title: "회원가입")
     let fieldView = UIView()
     let emailView = TextFieldView(title: "이메일", placeholder: "이메일을 입력하세요")
     

@@ -1,13 +1,13 @@
 //
-//  HomeViewController.swift
+//  CreateWSController.swift
 //  Workspace
 //
-//  Created by 김하은 on 1/7/24.
+//  Created by 김하은 on 1/19/24.
 //
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class CreateWSController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

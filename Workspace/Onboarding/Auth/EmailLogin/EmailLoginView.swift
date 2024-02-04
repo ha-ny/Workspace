@@ -7,9 +7,9 @@
 
 import UIKit
 
-class EmailLoginView: BaseView {
+final class EmailLoginView: BaseView {
 
-    let navigationView = NavigationView(title: "이메일 로그인")
+    let navigationView = ModalNavigationView(title: "이메일 로그인")
     let emailView = TextFieldView(title: "이메일", placeholder: "이메일을 입력하세요")
     let passwordView = TextFieldView(title: "비밀번호", placeholder: "비밀번호를 입력하세요")
     
