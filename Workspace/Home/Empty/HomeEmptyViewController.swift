@@ -14,6 +14,7 @@ final class HomeEmptyViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
     override func loadView() {
+        super.loadView()
         self.view = mainView
     }
     
