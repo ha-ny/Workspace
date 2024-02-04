@@ -52,7 +52,7 @@ class CreateWSView: BaseView {
         }
         
         cameraButton.snp.makeConstraints {
-            $0.bottom.trailing.equalToSuperview().offset(-5)
+            $0.bottom.trailing.equalToSuperview().offset(7)
             $0.size.equalTo(24)
         }
         
